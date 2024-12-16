@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.main-wrapper {
+    /* background-color: grey; */
+    height: 100vh; width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    /* background-color: chartreuse; */
+    width: 1200px; height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.hleft {
+    height: 50px; width:300px ;
+    /* background-color: deeppink; */
+}
+
+.hleft img{
+    height: 50px;
+}
+
+.hmid {
+    width: 450px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.hmid a:hover {
+    border-bottom: 3px solid #00dbb6;
+    cursor: pointer;
+}
+
+.hmid a, .hright a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hright {
+    width: 350px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 30px;
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.hright a:hover{
+color: #00dbb6;
+}
+
+.hright img{
+    height: 30px;
+}
+
+.hright img:hover{
+    cursor: pointer;
+}
+
+.hright .noti {
+    width: 20px; height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: 40%;
+}
+
+.mainbody {
+    width: 1200px; height: 85%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;  
+}
+
+.mycart {
+    height: 200px; width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.mycart p {
+    font-size: 48px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.container {
+    height: 700px; width: 100%;
+    /* background-color: darksalmon; */
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    
+}
+
+.container .left {
+    height: 100%; width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+}
+
+.container .left .box1 {
+    height: 250px; width: 100%;
+    background-color: rgba(255, 255, 255, 0.823);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container .left .bin {
+    width: 100px; 
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+.container .left .bin img {
+    height: 40px; width: 40px;
+    /* color: rgb(41, 221, 149);
+    border: 2px solid mediumseagreen; */
+    border: 1px solid #c7c7c7;
+    border-radius: 50%;
+    margin-left: 20px;
+    padding: 5px;
+    color: #00dbb6;
+}
+
+.container .left .bin img:hover {
+    cursor: pointer;
+    color: #00dbb6;
+    border: 2px solid #00dbb6;
+}
+
+
+.container .left .cover {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* background-color: lime; */
+}
+
+.container .left .cover img {
+    height: 150px ; width: 150px;
+    border: 1px solid #c7c7c7;
+    border-radius: 30px;
+}
+
+.container .left .info {
+    width: 300px;
+    /* background-color: violet; */
+}
+
+.container .left .box2 {
+    height: 250px; width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container .right {
+    height: 450px; width: 500px;
+    /* background-color: aqua; */
+    border: 1px solid #c7c7c7;
+    border-radius: 30px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container .right .subtotal,
+.container .right .total {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    align-items: center;
+}
+
+.right .coupon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right .coupon img {
+    height: 35px;
+    color: #00dbb6;
+    /* background-color: yellowgreen; */
+}
+
+.right .coupon input {
+    height: 35px; width:250px ;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #c7c7c7;
+    border: 2px solid #c7c7c7;
+    border-radius: 5px;
+}
+
+.right .coupon button {
+    height: 35px; width: 150px;
+    background-color: whitesmoke;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00dbb6;
+    border: 2px solid #00dbb6;
+    border-radius: 10px;
+}
+
+.right .coupon button:hover{
+    background-color: #00dbb6;
+    color: white;
+    cursor: pointer;
+}
+
+
+.container .right .total {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.right .subtotal .subl p{
+    font-size: 20px;
+    color: #c7c7c7;
+}
+
+.right .subtotal .subr p{
+    font-size: 20px;
+    color: #8d8d8d;
+}
+
+.right .total .totall p{
+    font-size: 20px;
+    color: #656565;
+}
+
+.right .total .totalr p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #00dbb6;
+}
+
+.right .checkout {
+    display: flex;
+    justify-content: center;
+}
+
+.right .checkout button{
+    width: 300px; height: 35px;
+    background-color: #00dbb6;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 3px silver;
+    font-size: 16px;
+    font-weight: bold;
+    padding-block: 5px;
+}
+
+.right .checkout button:hover{
+    cursor: pointer;
+}
+
+.footer {
+    /* background-color: coral; */
+    width: 1200px; height: 5%;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    border-top: 1px solid #c7c7c7;
+}

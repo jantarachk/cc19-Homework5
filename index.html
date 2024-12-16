@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homework 5 - Shopping cart</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Thai:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+        </head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="hleft">
+                <div class="logo">
+                    <img src="./img/jobpasscard-logo-nav.png" alt="">
+                </div>
+            </div>                
+
+            <div class="hmid">
+                <a href="#"> ABOUT US</a>
+                <a href="#"> PASSCARD</a>
+                <a href="#"> PROFILE</a>
+            </div>
+            <div class="hright">
+                <img src="./img/find-svgrepo-com.svg" alt="find">
+                <img src="./img/cart-shopping-svgrepo-com.svg" alt="">
+                <a href="#">LOGIN</a>
+                <a href="#"> SIGN UP</a>
+                <div class="noti">
+                    3
+                </div>
+            </div>
+        </div>
+
+        <div class="mainbody">
+            <div class="mycart">
+                <p>My Cart</p>
+            </div>
+            <div class="container">
+                <div class="left">
+                    <div class="box1">
+                        <div class="bin">
+                            <img src="./img/bin-svgrepo-com.svg" alt="bin">
+                        </div>
+                        <div class="cover">
+                            <img src="./img/cover1.jpeg" alt="ajbeer">
+                        </div>
+                        <div class="info">
+                            <h1 style="font-weight: normal;"> Ajarn Beer </h1> 
+                            <form> 
+                                <img src="./img/circ1.svg" width="15px">
+                                <img src="./img/circ1.svg" width="15px">
+                                <img src="./img/circ1.svg" width="15px">
+                                <img src="./img/circ0.svg" width="15px">
+                                <select name="level" id="level" style="width: 70px">
+                                    <option value="lv1">LV 1-4</option>
+                                    <option value="lv2">LV 2-4</option>
+                                    <option value="lv3" selected>LV 3-4</option>
+                                    <option value="lv4">LV 4-4</option>
+                                </select>
+                            </form>
+                            <h3 style="font-weight: normal;"> THB 150 </h3>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="bin">
+                            <img src="./img/bin-svgrepo-com.svg" alt="bin">
+                        </div>
+                        <div class="cover">
+                            <img src="./img/cover2.jpg" alt="ajdaeng">
+                        </div>
+                        <div class="info">
+                            <h1 style="font-weight: normal;"> Ajarn Daeng </h1> 
+                            <form> 
+                                <img src="./img/circ1.svg" width="15px">
+                                <img src="./img/circ0.svg" width="15px">
+                                <img src="./img/circ0.svg" width="15px">
+                                <img src="./img/circ0.svg" width="15px">
+                                <select name="level" id="level" style="width: 70px">
+                                <option value="lv1">LV 1-4</option>
+                                <option value="lv2">LV 2-4</option>
+                                <option value="lv3">LV 3-4</option>
+                                <option value="lv4">LV 4-4</option>
+                                </select>
+                            </form>
+                            <h3 style="font-weight: normal;"> THB 150 </h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="orderInfo">
+                        <h2 style="font-size: 28px; font-weight: 600;">Order Info</h2>
+                    </div>
+                    <div class="subtotal">
+                        <div class="subl">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="subr">
+                            <p>THB 300</p>
+                        </div>
+                    </div>
+                    <div class="coupon">
+                        <img src="./img/coupon-2-svgrepo-com.svg">
+                        <input type="text" name="promo" id="promo" placeholder="Promotion code">
+                        <button>APPLY</button>
+                    </div>
+                    <div class="total">
+                        <div class="totall">
+                            <p>Total payment</p>
+                        </div>
+                        <div class="totalr">
+                            <p>THB 300</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>LOG IN TO CHECK OUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p> Kang Jantarach | Codecamp 19</p>
+        </div>
+    </div>
+</body>
+
+</html>
